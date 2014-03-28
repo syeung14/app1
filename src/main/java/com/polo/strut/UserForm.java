@@ -22,12 +22,12 @@ public class UserForm extends ActionForm {
 	@Override
 	public ActionErrors validate(ActionMapping mapping,
 			HttpServletRequest request) {
-		// TODO Auto-generated method stub
 		
-		ActionErrors errors =new ActionErrors();
+		ActionErrors errors = new ActionErrors();
 		if (getUserName() == null || "".equals(getUserName())) {
 			errors.add("common.name.err", new ActionMessage(
 					"error.common.name.required"));
+			
 		}
 		
 		return errors;

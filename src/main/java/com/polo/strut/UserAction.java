@@ -8,16 +8,22 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
+/**
+ * http://www.mkyong.com/struts/struts-htmltext-textbox-example/
+ * 
+ * @author marcoyeung
+ *
+ */
 public class UserAction extends Action {
 
 	@Override
-	public ActionForward execute(ActionMapping mapping, ActionForm form,
+	public ActionForward /*view*/ execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
 		// TODO Auto-generated method stub
 
 		return mapping.findForward("success");
-		
-	}
+
 	
+	} //
 }
